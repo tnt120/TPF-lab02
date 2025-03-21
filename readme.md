@@ -1,0 +1,1 @@
+# Project for laboratory no. 2 at the Krakow University of Technology
