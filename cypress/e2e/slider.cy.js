@@ -60,11 +60,13 @@ describe('Swiper Gallery Test', function () {
       cy.visit('http://localhost:3000');
       
       cy.get('.swiper-container, .swiper').should('be.visible');
-
+      cy.wait(1000);
       cy.get('.swiper-button-next').click();
+      cy.wait(1000);
       cy.get('.swiper-slide-active').should('contain', 'United Kingdom')
-      cy.wait(2000);
+      cy.wait(1000);
       cy.get('.swiper-button-prev').click();
+      cy.wait(1000);
       cy.get('.swiper-slide-active').should('contain', 'Italy')
     });
   });
